@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.11-SNAPSHOT'
+    id "fabric-loom" version "1.8-SNAPSHOT"
     id 'maven-publish'
 }
 
@@ -21,11 +21,14 @@ loom {
     }
 }
 
-fabricApi {
-    configureDataGeneration {
-        client = true
+loom {
+    runs {
+        datagen {
+            client()
+        }
     }
 }
+
 
 repositories {
     // Add repositories to retrieve artifacts from in here.

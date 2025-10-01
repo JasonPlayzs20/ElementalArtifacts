@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "org/jason/everflame/client/mixin/PlayerEntityModelMixin": {
+      "setAngles": "Lnet/minecraft/class_572;method_17087(Lnet/minecraft/class_1309;FFFFF)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "org/jason/everflame/client/mixin/PlayerEntityModelMixin": {
+        "setAngles": "Lnet/minecraft/class_572;method_17087(Lnet/minecraft/class_1309;FFFFF)V"
+      }
+    }
+  }
+}

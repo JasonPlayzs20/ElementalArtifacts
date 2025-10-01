@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "everflame",
+  "version": "${version}",
+  "name": "Everflame",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/everflame/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.jason.everflame.client.EverflameDataGenerator"
+    ],
+    "client": [
+      "org.jason.everflame.client.EverflameClient"
+    ],
+    "main": [
+      "org.jason.everflame.Everflame"
+    ]
+  },
+  "mixins": [
+
+    "everflame.mixins.json",
+    {
+      "config": "everflame.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
